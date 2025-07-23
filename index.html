@@ -8,22 +8,28 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('https://muertosa.github.io/chiken/background.png') no-repeat center center fixed;
+      background: url('https://muertosa.github.io/chiken/background.webp') no-repeat center center fixed;
       background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
+
+    /* Эффект стекла */
     .card {
-      background: #fff;
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       padding: 30px;
       text-align: center;
       max-width: 320px;
       width: 90%;
     }
+
     .avatar {
       width: 120px;
       height: 120px;
@@ -31,16 +37,20 @@
       object-fit: cover;
       margin-bottom: 20px;
     }
+
     .title {
       font-size: 22px;
       font-weight: bold;
       margin-bottom: 8px;
+      color: #000;
     }
+
     .subs {
       font-size: 16px;
-      color: #666;
+      color: #333;
       margin-bottom: 20px;
     }
+
     .btn {
       display: inline-block;
       background: #0088cc;
@@ -51,6 +61,7 @@
       text-decoration: none;
       transition: background 0.3s ease;
     }
+
     .btn:hover {
       background: #0072a3;
     }
@@ -58,7 +69,7 @@
 </head>
 <body>
   <div class="card">
-    <img src="https://muertosa.github.io/chiken/0_0.png" alt="Avatar" class="avatar">
+    <img src="https://muertosa.github.io/chiken/avatar.webp" alt="Avatar" class="avatar">
     <div class="title">Chicken Master BOT 🚀</div>
     <div class="subs">238,974 subscribers</div>
     <a href="https://t.me/signal_game_win_chicken2_bot" class="btn">👉 Open in Telegram 👈</a>
